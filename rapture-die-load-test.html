@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Setting Die Content Symbols</title>
     <link rel="stylesheet" href="rapture-die-load-test.css"/>
-    <script src="GridDice.js" rel="javascript"></script>
+    <script src="rapture-die-load-test.js" rel="javascript"></script>
 </head>
 <body id="body-for-background">
     <div  >
@@ -46,46 +46,46 @@
         </symbol>
 
         <!--SQUARE-->
-        <symbol id="primary-square">
+        <symbol id="square-top">
             <polygon stroke-width="4" stroke="black" points="236.97413408594537,215 63.02586591405466,215 63.025865914054634,84 236.9741340859453,84" />
+        </symbol>
+        <symbol id="square-bottom">
+            <polygon stroke-width="2" stroke="black" points="244.2462120245875,224.24621202458746 55.75378797541252,224.2462120245875 55.7537879754125,75.75378797541252 244.24621202458746,75.7537879754125" />
         </symbol>
 
         <!--HEXAGON-->
-        <symbol id="primary-hexagon">
+        <symbol id="hexagon-bottom">
             <polygon stroke-width="2" stroke="black" points="237.46856578222832,200.5 150,251 62.53143421777172,200.50000000000003 62.531434217771675,99.50000000000003 149.99999999999997,49 237.46856578222832,99.50000000000003" />
         </symbol>
-        <symbol id="mid-hexagon">
-            <polygon stroke-width="4" points="234.870489570875,199 150,248 65.12951042912503,199.00000000000003 65.12951042912499,101.00000000000003 149.99999999999997,52 234.870489570875,101.00000000000003" />
-        </symbol>
-        <symbol id="top-hexagon">
-            <polygon stroke-width="3" stroke="black" points="231.40638795573724,197 150,244 68.59361204426278,197.00000000000003 68.59361204426276,103.00000000000003 149.99999999999997,56 231.40638795573724,103.00000000000003" />
+        <symbol id="hexagon-top">
+            <polygon stroke-width="4" stroke="black" points="231.40638795573724,197 150,244 68.59361204426278,197.00000000000003 68.59361204426276,103.00000000000003 149.99999999999997,56 231.40638795573724,103.00000000000003" />
         </symbol>
 
         <!--DOTS-->
         <symbol id="dots-five">
-            <circle cx="150" cy="106" r="14" />
-            <circle cx="111" cy="139" r="14" />
-            <circle cx="189" cy="139" r="14" />
-            <circle cx="128" cy="189" r="14" />
-            <circle cx="172" cy="189" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="150" cy="106" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="111" cy="139" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="189" cy="139" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="128" cy="189" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="172" cy="189" r="14" />
         </symbol>
         <symbol id="dots-four">
-            <circle cx="150" cy="106" r="14" />
-            <circle cx="111" cy="146" r="14" />
-            <circle cx="189" cy="146" r="14" />
-            <circle cx="150" cy="189" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="150" cy="106" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="111" cy="146" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="189" cy="146" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="150" cy="189" r="14" />
         </symbol>
         <symbol id="dots-three">
-            <circle cx="150" cy="106" r="14" />
-            <circle cx="111" cy="166" r="14" />
-            <circle cx="185" cy="174" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="150" cy="106" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="111" cy="166" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="185" cy="174" r="14" />
         </symbol>
         <symbol id="dots-two">
-            <circle cx="136" cy="115" r="14" />
-            <circle cx="164" cy="185" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="136" cy="115" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="164" cy="185" r="14" />
         </symbol>
         <symbol id="dots-one">
-            <circle cx="150" cy="150" r="14" />
+            <circle stroke="gold" stroke-width="1" cx="150" cy="150" r="14" />
         </symbol>
         <symbol id="dots-none">
             <circle cx="150" cy="150" r="0" />
@@ -95,20 +95,42 @@
     </div>
     <!-- CLOSES OUT SVG DECLARATIONS DIV-->
 
-    <div class="continer" style="background-color:red">
+    <div id="die-1" class="container" >
         <svg viewBox="0 0 300 300">
             <use xlink:href="#circle-bottom" fill="white"/>
-            <use xlink:href="#circle-top" fill="red"/>
+            <use xlink:href="#circle-top" fill="white"/>
             <use xlink:href="#dots-three"/>
         </svg>
     </div>
-    <div class="continer" >
+    <div  id="die-2" class="container" >
         <svg viewBox="0 0 300 300">
             <use xlink:href="#triangle-bottom" fill="red"/>
             <use xlink:href="#triangle-top" fill="white"/>
             <use xlink:href="#dots-three"/>
         </svg>
     </div>
+    <div id="die-3" class="container" >
+        <svg viewBox="0 0 300 300">
+            <use xlink:href="#square-bottom" fill="red"/>
+            <use xlink:href="#square-top" fill="white"/>
+            <use xlink:href="#dots-three"/>
+        </svg>
+    </div>
+    <div id="die-4" class="container" >
+        <svg viewBox="0 0 300 300">
+            <use xlink:href="#hexagon-bottom" fill="white"/>
+            <use xlink:href="#hexagon-top" fill="white"/>
+            <use xlink:href="#dots-five"/>
+        </svg>
+    </div>
+    <div id="die-5" class="container" style="background-color:red">
+        <svg viewBox="0 0 300 300">
+            <use xlink:href="#triangle-bottom" fill="white"/>
+            <use xlink:href="#triangle-top" fill="red"/>
+            <use xlink:href="#dots-two"/>
+        </svg>
+    </div>
+
 
 </body>
 </html>
