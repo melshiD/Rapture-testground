@@ -1,0 +1,10 @@
+.continer{
+    width: 300px;
+    height: 300px;
+    border: solid black;
+    border-radius: 10px;
+    background: white;
+    float: left;
+    margin-left: 40px;
+
+}
