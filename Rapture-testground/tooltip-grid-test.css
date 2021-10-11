@@ -1,5 +1,18 @@
+.tooltip-button{
+    width: 10px;
+    height: 10px;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    white-space: nowrap;
 
+}
+.tooltip-button:hover{
+    opacity: 1;
+}
 .tooltip-grid-container{
+    background-color: white;
     width: 150px;
     height: 198px;
     border: solid black;
@@ -23,7 +36,7 @@
     border-radius: 2px;
 }
 .grid-item-title{
-    font-style: helvetica;
+    font-style: robooto;
     font-size: 14px;
     grid-area: title;
     background-color: deepskyblue;
@@ -50,51 +63,4 @@
 }
 .grid-item-bottom{
     grid-area: bottom;
-}
-
-
-[data-tooltip-content]{
-    font-family:Arial, Helvetica, sans-serif;
-    color: pink;
-    position: relative;
-    text-transform: capitalize;
-}
-[data-tooltip-content]:hover{
-    color: darkolivegreen;
-}
-[data-tooltip-content]::after{
-    content: attr(data-tooltip-content);
-    color: orangered;
-    background: #3d3d3d;
-    padding: 1rem;
-    border-radius: .2rem;
-    margin-left: 1rem;
-    position: absolute;
-    white-space: nowrap;
-    top: -100%;
-    left: 100%;
-
-}
-[data-tooltip-content]::before{
-    content: "";
-    width: 0;
-    position: absolute;
-    border-right: 1rem solid #3d3d3d;
-    border-top: 1rem solid transparent;
-    border-bottom: 1rem solid transparent;
-    left: 100%;
-    top: -50%;
-    pointer-events: none;
-}
-[data-tooltip-content]::after,[data-tooltip-content]::before{
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .3s ease, visibility .3s ease;
-}
-
-/*revelaing tooltip*/
-
-[data-tooltip-content]:hover::after,[data-tooltip-content]:hover::before{
-    opacity: 1;
-    visibility: visible;
 }
