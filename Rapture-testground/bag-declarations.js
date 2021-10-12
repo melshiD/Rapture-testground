@@ -1,197 +1,206 @@
 //DIE COLOR, SCRIBE COLOR, DOTS, SHAPE, NUM VAL
 
 var original_base_set_10_11_2021 = [
-    [
-        ["one", "white", "black", "one", "circle", "5"],
-        ["one", "white", "black", "one", "triangle", "3"],
-        ["one", "white", "red", "one", "triangle", "3"],
-        ["one", "white", "red", "one", "triangle", "5"],
-        ["one", "white", "black", "one", "circle", "5"],
-        ["one", "white", "red", "two", "circle", "3"]
+    [   //0
+        ["white", "black", "one", "circle", "5"],
+        ["white", "black", "one", "triangle", "3"],
+        ["white", "red", "one", "triangle", "3"],
+        ["white", "red", "one", "triangle", "5"],
+        ["white", "black", "one", "circle", "5"],
+        ["white", "red", "two", "circle", "3"]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //1
+        ["white", "red", "five", "hexagon", "11"],
+        ["white", "red", "none", "triangle", ""],
+        ["white", "black", "five", "hexagon", "1"],
+        ["white", "black", "four", "none", ""],
+        ["white", "red", "five", "hexagon", "1"],
+        ["white", "black", "five", "hexagon", "11"]
     ],
-    [
-        ["three", "white", "black", "one", "triangle", "3"],
-        ["three", "white", "red", "three", "square", "3"],
-        ["three", "white", "red", "one", "triangle", "5"],
-        ["three", "white", "black", "three", "square", "5"],
-        ["three", "white", "black", "three", "triangle", "2"],
-        ["three", "white", "black", "two", "triangle", "1"]
+    [   //2
+        ["white", "black", "one", "triangle", "3"],
+        ["white", "red", "three", "square", "3"],
+        ["white", "red", "one", "triangle", "5"],
+        ["white", "black", "three", "square", "5"],
+        ["white", "black", "three", "triangle", "2"],
+        ["white", "black", "two", "triangle", "1"]
     ]
-    [
-        ["four", "white", "black", "four", "square", "5"],
-        ["four", "white", "black", "three", "hexagon", "7"],
-        ["four", "white", "red", "one", "circle", "3"],
-        ["four", "white", "black", "two", "circle", "2"],
-        ["four", "white", "red", "three", "circle", "3"],
-        ["four", "white", "black", "one", "triangle", "2"]
+    [   //3
+        ["white", "black", "four", "square", "5"],
+        ["white", "black", "three", "hexagon", "7"],
+        ["white", "red", "one", "circle", "3"],
+        ["white", "black", "two", "circle", "2"],
+        ["white", "red", "three", "circle", "3"],
+        ["white", "black", "one", "triangle", "2"]
     ],
-    [
-        ["five", "white", "red", "one", "triangle", "1"],
-        ["five", "white", "red", "four", "triangle", "2"],
-        ["five", "white", "black", "four", "triangle", "5"],
-        ["five", "white", "black", "one", "triangle", "7"],
-        ["five", "white", "black", "one", "triangle", "2"],
-        ["five", "white", "black", "two", "triangle", "1"]
+    [   //4
+        ["white", "red", "one", "triangle", "1"],
+        ["white", "red", "four", "triangle", "2"],
+        ["white", "black", "four", "triangle", "5"],
+        ["white", "black", "one", "triangle", "7"],
+        ["white", "black", "one", "triangle", "2"],
+        ["white", "black", "two", "triangle", "1"]
     ],
-    [
-        ["six", "white", "black", "one", "circle", "7"],
-        ["six", "white", "black", "two", "triangle", "2"],
-        ["six", "white", "black", "four", "circle", "7"],
-        ["six", "white", "black", "two", "triangle", "3"],
-        ["six", "white", "black", "one", "triangle", "3"],
-        ["six", "white", "black", "four", "triangle", "7"]
+    [   //5
+        ["white", "black", "one", "circle", "7"],
+        ["white", "black", "two", "triangle", "2"],
+        ["white", "black", "four", "circle", "7"],
+        ["white", "black", "two", "triangle", "3"],
+        ["white", "black", "one", "triangle", "3"],
+        ["white", "black", "four", "triangle", "7"]
     ],
-    [
-        ["seven", "white", "red", "three", "circle", "7"],
-        ["seven", "white", "black", "two", "square", "2"],
-        ["seven", "white", "black", "two", "circle", "2"],
-        ["seven", "white", "black", "three", "square", "3"],
-        ["seven", "white", "red", "two", "square", "1"],
-        ["seven", "white", "black", "one", "square", "1"]
+    [   //6
+        ["white", "red", "three", "circle", "7"],
+        ["white", "black", "two", "square", "2"],
+        ["white", "black", "two", "circle", "2"],
+        ["white", "black", "three", "square", "3"],
+        ["white", "red", "two", "square", "1"],
+        ["white", "black", "one", "square", "1"]
     ],
-    [
-        ["eight", "white", "red", "one", "triangle", "5"],
-        ["eight", "white", "red", "one", "hexagon", "5"],
-        ["eight", "white", "red", "one", "circle", "5"],
-        ["eight", "white", "red", "one", "square", "5"],
-        ["eight", "white", "black", "two", "none", ""],
-        ["eight", "white", "black", "one", "none", ""]
+    [   //7
+        ["white", "red", "one", "triangle", "5"],
+        ["white", "red", "one", "hexagon", "5"],
+        ["white", "red", "one", "circle", "5"],
+        ["white", "red", "one", "square", "5"],
+        ["white", "black", "two", "none", ""],
+        ["white", "black", "one", "none", ""]
     ],
-    //where I left off
+        //8
     [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+        ["white", "black", "two", "square", "5"],
+        ["white", "black", "one", "triangle", "1"],
+        ["white", "black", "four", "circle", "7"],
+        ["white", "black", "two", "triangle", "2"],
+        ["white", "black", "four", "triangle", "7"],
+        ["white", "black", "one", "triangle", "1"]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //9
+        ["white", "black", "five", "circle", "2"],
+        ["white", "black", "five", "circle", "7"],
+        ["white", "black", "four", "triangle", "1"],
+        ["white", "black", "five", "square", "2"],
+        ["white", "black", "one", "triangle", "1"],
+        ["white", "black", "five", "square", "7"]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //10
+        ["white", "black", "one", "circle", "2"],
+        ["white", "black", "three", "hexagon", "5"],
+        ["white", "black", "three", "circle", "2"],
+        ["white", "red", "one", "triangle", "3"],
+        ["white", "black", "four", "triangle", "7"],
+        ["white", "black", "one", "circle", "7"]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //11
+        ["white", "red", "none", "hexagon", ""],
+        ["white", "black", "none", "circle", ""],
+        ["white", "black", "one", "none", ""],
+        ["white", "black", "two", "none", ""],
+        ["white", "black", "four", "none", ""],
+        ["white", "black", "none", "triangle", ""]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //12
+        ["white", "red", "five", "circle", "5"],
+        ["white", "black", "five", "circle", "5"],
+        ["white", "black", "five", "triangle", "5"],
+        ["white", "black", "four", "hexagon", "5"],
+        ["white", "black", "four", "triangle", "5"],
+        ["white", "black", "five", "hexagon", "5"]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //13
+        ["white", "black", "three", "hexagon", "7"],
+        ["white", "red", "one", "hexagon", "3"],
+        ["white", "black", "two", "hexagon", "5"],
+        ["white", "black", "four", "triangle", "2"],
+        ["white", "red", "four", "circle", "2"],
+        ["white", "black", "one", "hexagon", "3"]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //14
+        ["white", "black", "four", "triangle", "7"],
+        ["white", "black", "three", "circle", "7"],
+        ["white", "black", "one", "triangle", "2"],
+        ["white", "black", "four", "square", "3"],
+        ["white", "black", "two", "triangle", "2"],
+        ["white", "black", "three", "triangle", "2"]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //15
+        ["white", "red", "three", "square", "1"],
+        ["white", "black", "four", "circle", "5"],
+        ["white", "black", "four", "triangle", "1"],
+        ["white", "red", "one", "triangle", "2"],
+        ["white", "black", "four", "square", "3"],
+        ["white", "black", "two", "square", "1"]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //16
+        ["white", "red", "five", "circle", ""],
+        ["white", "black", "one", "hexagon", ""],
+        ["white", "black", "four", "circle", "7"],
+        ["white", "black", "two", "hexagon", ""],
+        ["white", "black", "five", "triangle", ""],
+        ["white", "black", "two", "hexagon", ""]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //17
+        ["white", "red", "one", "hexagon", "5"],
+        ["white", "black", "five", "none", ""],
+        ["white", "red", "five", "circle", "11"],
+        ["white", "red", "none", "circle", ""],
+        ["white", "red", "none", "hexagon", ""],
+        ["white", "black", "one", "none", ""]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //18
+        ["white", "black", "none", "triangle", ""],
+        ["white", "red", "one", "square", "5"],
+        ["white", "black", "three", "none", ""],
+        ["white", "black", "two", "none", ""],
+        ["white", "black", "three", "none", ""],
+        ["white", "black", "one", "none", ""]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //19 FIRST WACKY ONE
+        ["white", "black", "one", "circle", "3",
+            ["white", "black", "two", "triangle", "7"]],
+        ["white", "black", "three", "triangle", "2",
+            ["white", "black", "four", "square", "7"]],
+        ["white", "black", "one", "none", "",
+            ["white", "black", "three", "none", ""]],
+        ["white", "red", "none", "hexagon", "",
+            ["white", "black", "five", "circle", "7"]],
+        //Will need to come up with a solid way to parse these more complex faces
+        ["white", "black", "none", "triangle", "",
+            ["white", "black", "none", "square", "",
+                ["white", "black", "none", "hexagon", ""]]],
+        ["white", "black", "five", "none", "",
+            ["white", "black", "none", "hexagon", "",
+                ["white", "red", "none", "circle", ""]]]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //20, First Red Die of Four in base set
+        ["red", "black", "three", "none", ""],
+        ["red", "black", "one", "none", ""],
+        ["red", "black", "three", "none", ""],
+        ["red", "black", "none", "square", ""],
+        ["red", "black", "three", "none", ""],
+        ["red", "black", "two", "none", ""]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //21, Second Red Die of Four in base set
+        ["red", "black", "none", "triangle", ""],
+        ["red", "black", "one", "none", ""],
+        ["red", "black", "none", "circle", ""],
+        ["red", "black", "none", "triangle", ""],
+        ["red", "black", "none", "hexagon", ""],
+        ["red", "black", "five", "none", ""]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
+    [   //22, Third Red Die of Four in base set
+        ["red", "black", "two", "none", ""],
+        ["red", "black", "one", "none", ""],
+        ["red", "black", "one", "none", ""],
+        ["red", "black", "two", "none", ""],
+        ["red", "black", "none", "triangle", ""],
+        ["red", "black", "none", "circle", ""]
     ],
-    [
-        ["two", "white", "red", "five", "hexagon", "11"],
-        ["two", "white", "red", "none", "triangle", ""],
-        ["two", "white", "black", "five", "hexagon", "1"],
-        ["two", "white", "black", "four", "none", ""],
-        ["two", "white", "red", "five", "hexagon", "1"],
-        ["two", "white", "black", "five", "hexagon", "11"]
-    ]
+    [   //23, Forth and Final Red Die of Four in base set
+        ["red", "black", "three", "none", ""],
+        ["red", "black", "five", "none", ""],
+        ["red", "black", "two", "none", ""],
+        ["red", "black", "four", "none", ""],
+        ["red", "black", "none", "hexagon", ""],
+        ["red", "black", "none", "triangle", ""]
+    ],
 ];

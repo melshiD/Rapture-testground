@@ -14,12 +14,12 @@
 var color = "gold";
 
 var dieFacesArray = [
-                ["red", color, "four", "circle", "7"],
+                ["red", "gold", "four", "circle", "7"],
                 ["red", "gold", "one", "square", "7"],
                 ["white", "red", "two", "square", "7"],
                 ["white", "gold", "three", "triangle", "7"],
                 ["red", "gold", "three", "hexagon", "7"],
-                ["white", color, "five", "triangle", "7"]
+                ["white", "gold", "five", "triangle", "7"]
             ];//just one die, not a whole bag yet!
 
 //whole die need to be an object, and then I can take the die color out of the array
@@ -39,11 +39,11 @@ function drawAllFaces(dieFacesArray){
 function drawDieToBrowser(dieFaceArray, dieDiv){
     
     //Set some meaningful variable names
-    var dieBodyColor    = dieFaceArray[1];
-    var diePenColor     = dieFaceArray[2];
-    var dieFaceDots     = dieFaceArray[3];
-    var dieFaceRune     = dieFaceArray[4];
-    var dieFaceNumVal   = dieFaceArray[5];
+    var dieBodyColor    = dieFaceArray[0];
+    var diePenColor     = dieFaceArray[1];
+    var dieFaceDots     = dieFaceArray[2];
+    var dieFaceRune     = dieFaceArray[3];
+    var dieFaceNumVal   = dieFaceArray[4];
 
     //grab a die div (and set background as dieBodyColor)
     //var thisDieFace = document.getElementById("die-1");
