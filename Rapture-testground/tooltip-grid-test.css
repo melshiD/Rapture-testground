@@ -36,7 +36,8 @@
     border-radius: 2px;
 }
 .grid-item-title{
-    font-style: robooto;
+    font-style: robooto+
+    ;
     font-size: 14px;
     grid-area: title;
     background-color: deepskyblue;

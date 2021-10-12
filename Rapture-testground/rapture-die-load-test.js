@@ -39,11 +39,11 @@ function drawAllFaces(dieFacesArray){
 function drawDieToBrowser(dieFaceArray, dieDiv){
     
     //Set some meaningful variable names
-    var dieBodyColor    = dieFaceArray[0];
-    var diePenColor     = dieFaceArray[1];
-    var dieFaceDots     = dieFaceArray[2];
-    var dieFaceRune     = dieFaceArray[3];
-    var dieFaceNumVal   = dieFaceArray[4];
+    var dieBodyColor    = dieFaceArray[1];
+    var diePenColor     = dieFaceArray[2];
+    var dieFaceDots     = dieFaceArray[3];
+    var dieFaceRune     = dieFaceArray[4];
+    var dieFaceNumVal   = dieFaceArray[5];
 
     //grab a die div (and set background as dieBodyColor)
     //var thisDieFace = document.getElementById("die-1");
