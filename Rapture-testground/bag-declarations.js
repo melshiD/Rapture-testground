@@ -195,7 +195,7 @@ var original_base_set_10_11_2021 = [
         ["red", "black", "none", "triangle", ""],
         ["red", "black", "none", "circle", ""]
     ],
-    [   //23, Forth and Final Red Die of Four in base set
+    [   //23, Fourth and Final Red Die of Four in base set
         ["red", "black", "three", "none", ""],
         ["red", "black", "five", "none", ""],
         ["red", "black", "two", "none", ""],
