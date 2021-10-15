@@ -1,6 +1,9 @@
-//DIE COLOR, SCRIBE COLOR, DOTS, SHAPE, NUM VAL
+//import * as dieDeclarations from 'bag-declarations.js';
 
-var original_base_set_10_11_2021 = [
+//var dieBag = dieDeclarations.original_base_set_10_11_2021;
+//how the fuh' do I import this?
+//original_base_set_10_11_2021
+var dieBag = [
     [   //0
         ["white", "black", "one", "circle", "5"],
         ["white", "black", "one", "triangle", "3"],
@@ -205,4 +208,10 @@ var original_base_set_10_11_2021 = [
     ],
 ];
 
-export{original_base_set_10_11_2021};
+//I'm better off coding right now than giving into the desire to go all 'travel blog' over this view;
+
+//var templateDiv = document.getElementById('die-1');
+
+//try building the structured element entirely dynamically instead of copying and appending a node.
+
+//var dieBag is what we're working with
