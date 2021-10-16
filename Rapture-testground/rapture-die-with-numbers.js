@@ -156,7 +156,7 @@ var dieBag = [
         ["white", "black", "two", "none", ""],
         ["white", "black", "three", "none", ""],
         ["white", "black", "one", "none", ""]
-    ],
+    ],/*
     [   //19 FIRST WACKY ONE
         ["white", "black", "one", "circle", "3",
             ["white", "black", "two", "triangle", "7"]],
@@ -173,7 +173,7 @@ var dieBag = [
         ["white", "black", "five", "none", "",
             ["white", "black", "none", "hexagon", "",
                 ["white", "red", "none", "circle", ""]]]
-    ],
+    ],*/
     [   //20, First Red Die of Four in base set
         ["red", "black", "three", "none", ""],
         ["red", "black", "one", "none", ""],
@@ -207,11 +207,44 @@ var dieBag = [
         ["red", "black", "none", "triangle", ""]
     ],
 ];
-
-//I'm better off coding right now than giving into the desire to go all 'travel blog' over this view;
-
-//var templateDiv = document.getElementById('die-1');
-
-//try building the structured element entirely dynamically instead of copying and appending a node.
-
 //var dieBag is what we're working with
+var viewboxValues = "0 0 300 300";
+var i = 0;
+
+var elementTree = document.createElement("div");
+elementTree.id = `die-${i}`;
+elementTree.classList.add(`container-${i}`);
+
+var svgElement = document.createElement('svg');
+svgElement.setAttribute("viewBox", viewboxValues);
+elementTree.appendChild(svgElement);
+
+var useElementOne = document.createElement('use');
+useElementOne.setAttribute("xlink:href", `${dieBag[i][0][3]}-bottom`);
+useElementOne.style.fill = "white";
+
+var useElementTwo = document.createElement('use');
+useElementTwo.setAttribute("xlink:href", `${dieBag[i][0][3]}-top`);
+useElementTwo.style.fill = "white";
+
+var useElementThree = document.createElement('use');
+useElementThree.setAttribute("xlink:href", `dots-${dieBag[i][0][2]}`);
+
+svgElement.appendChild(useElementOne);
+svgElement.appendChild(useElementTwo);
+svgElement.appendChild(useElementThree);
+
+var numAtTop = document.createElement('div'),
+    numAtBottom = document.createElement('div');
+
+numAtTop.innerHTML = dieBag[i][0][4];
+numAtBottom.innerHTML = dieBag[i][0][4];
+
+elementTree.appendChild(numAtTop);
+elementTree.appendChild(numAtBottom);
+
+
+console.log(elementTree);
+
+
+
