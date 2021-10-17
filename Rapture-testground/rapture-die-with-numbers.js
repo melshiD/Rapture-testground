@@ -238,13 +238,12 @@ var numAtTop = document.createElement('div'),
     numAtBottom = document.createElement('div');
 
 numAtTop.innerHTML = dieBag[i][0][4];
+numAtTop.classList.add('top-num-val');
 numAtBottom.innerHTML = dieBag[i][0][4];
+numAtBottom.classList.add('bottom-num-val');
 
 elementTree.appendChild(numAtTop);
 elementTree.appendChild(numAtBottom);
 
-
-console.log(elementTree);
-
-
-
+var outputElement = document.getElementById('mainOutput');
+outputElement.appendChild(elementTree);

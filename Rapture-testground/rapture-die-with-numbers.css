@@ -1,0 +1,25 @@
+[id*="die-"]{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template: 1fr, max-content, 1fr/1fr, max-content, 1fr;
+    grid-template-areas:    "top-num . ."
+                            ". image ."
+                            ". . bottom-num";
+    border: black solid;
+    border-width: 9px;
+    border-radius: 10px;
+    background: red;
+}
+.top-num-val{
+    grid-area: top-num;
+    padding-left: 12%;
+    padding-top: 2%;
+
+}
+.bottom-num-val{
+    grid-area: bottom-num;
+    padding-left: 12%;
+    padding-top: 2%;
+    transform: rotate(180deg);
+}

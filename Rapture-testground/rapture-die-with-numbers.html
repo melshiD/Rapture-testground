@@ -13,13 +13,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Setting Die Content Symbols</title>
-    <link rel="stylesheet" href="rapture-die-load-test.css"/>
+    <link rel="stylesheet" href="rapture-die-with-numbers.css"/>
     <!--script src="rapture-die-load-test.js" rel="javascript"></script-->
-    <script src="rapture-die-with-numbers.js" rel="javascript"></script>
 </head>
 <body id="body-for-background">
     <div  >
-    <svg id="svg-assets" width="300" height="300">
+    <svg id="svg-assets">
         <!--width="300" height="300" viewBox="0 0 300 300"-->
         <title>Rapture Game Die</title>
         <desc>The components that make up a single die</desc>
@@ -98,6 +97,7 @@
     <p>
         <a href="https://google.com" data-tooltip-content="you want to play" target="_blank">You know</a>
     </p>
+    <!-- This is the template that will be repeated and output
     <div id="die-1" class="container" >
         <svg viewBox="0 0 300 300">
             <use xlink:href="-bottom" fill="white"/>
@@ -107,5 +107,9 @@
         <div class="top-num-val"></div>
         <div class="bottom-num-val"></div>
     </div>
+    -->
+    <div id="mainOutput"></div>
+    <script src="rapture-die-with-numbers.js" rel="javascript"></script>
+
 </body>
 </html>
