@@ -27,7 +27,7 @@ var dieBag = [
         ["white", "black", "three", "square", "5"],
         ["white", "black", "three", "triangle", "2"],
         ["white", "black", "two", "triangle", "1"]
-    ]
+    ],
     [   //3
         ["white", "black", "four", "square", "5"],
         ["white", "black", "three", "hexagon", "7"],
@@ -211,39 +211,47 @@ var dieBag = [
 var viewboxValues = "0 0 300 300";
 var i = 0;
 
-var elementTree = document.createElement("div");
-elementTree.id = `die-${i}`;
-elementTree.classList.add(`container-${i}`);
+function ArrayToBrowser(){
+    for(i; i < dieBag.length; i++){
+        var elementTree = document.createElement("div");
+        elementTree.id = `die-${i}`;
+        elementTree.classList.add(`container-${i}`);
 
-var svgElement = document.createElement('svg');
-svgElement.setAttribute("viewBox", viewboxValues);
-elementTree.appendChild(svgElement);
+        var svgElement = document.createElement('svg');
+        svgElement.setAttribute("viewBox", viewboxValues);
+        svgElement.setAttribute("width", "300px")
+        svgElement.setAttribute("height", "300px");
+        elementTree.appendChild(svgElement);
 
-var useElementOne = document.createElement('use');
-useElementOne.setAttribute("xlink:href", `${dieBag[i][0][3]}-bottom`);
-useElementOne.style.fill = "white";
+        var useElementOne = document.createElement('use');
+        useElementOne.setAttribute("xlink:href", `#${dieBag[i][0][3]}-bottom`);
+        useElementOne.style.fill = "white";
 
-var useElementTwo = document.createElement('use');
-useElementTwo.setAttribute("xlink:href", `${dieBag[i][0][3]}-top`);
-useElementTwo.style.fill = "white";
+        var useElementTwo = document.createElement('use');
+        useElementTwo.setAttribute("xlink:href", `#${dieBag[i][0][3]}-top`);
+        useElementTwo.style.fill = `${dieBag[i][0][0]}`;
 
-var useElementThree = document.createElement('use');
-useElementThree.setAttribute("xlink:href", `dots-${dieBag[i][0][2]}`);
+        var useElementThree = document.createElement('use');
+        useElementThree.setAttribute("xlink:href", `#dots-${dieBag[i][0][2]}`);
 
-svgElement.appendChild(useElementOne);
-svgElement.appendChild(useElementTwo);
-svgElement.appendChild(useElementThree);
+        svgElement.appendChild(useElementOne);
+        svgElement.appendChild(useElementTwo);
+        svgElement.appendChild(useElementThree);
 
-var numAtTop = document.createElement('div'),
-    numAtBottom = document.createElement('div');
+        var numAtTop = document.createElement('div'),
+            numAtBottom = document.createElement('div');
 
-numAtTop.innerHTML = dieBag[i][0][4];
-numAtTop.classList.add('top-num-val');
-numAtBottom.innerHTML = dieBag[i][0][4];
-numAtBottom.classList.add('bottom-num-val');
+        numAtTop.innerHTML = dieBag[i][0][4];
+        numAtTop.classList.add('top-num-val');
+        numAtBottom.innerHTML = dieBag[i][0][4];
+        numAtBottom.classList.add('bottom-num-val');
 
-elementTree.appendChild(numAtTop);
-elementTree.appendChild(numAtBottom);
+        elementTree.appendChild(numAtTop);
+        elementTree.appendChild(numAtBottom);
 
-var outputElement = document.getElementById('mainOutput');
-outputElement.appendChild(elementTree);
+        var outputElement = document.getElementById('main-output');
+        outputElement.appendChild(elementTree);
+    }
+}
+
+ArrayToBrowser();
